@@ -1,0 +1,98 @@
+@import "tailwindcss";
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.active {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  color: white;
+}
+
+.btn-primary {
+  cursor: pointer;
+  padding-inline: 32px;
+  padding-block: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  transition-property: all;
+
+  border-radius: 3.40282e38px;
+}
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  color: #f97316;
+  background: #f973161a;
+  border: 1px solid #f973164d;
+  border-radius: 9999px;
+}
+.gradient-text {
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-secondary {
+  cursor: pointer;
+  padding-inline: 32px;
+  padding-block: 16px;
+  font-weight: 600;
+  background-color: #0000;
+  border: 1px solid #333;
+  color: white;
+  transition-property: all;
+  transition: all ease-out 0.3s;
+  border-radius: 3.40282e38px;
+}
+.btn-secondary:hover {
+  color: #f97316;
+  background: #f973161a;
+  border-color: #f97316;
+}
+.blob {
+  animation: blob 7s infinite;
+}
+.glass-card {
+  border-radius: var(--radius-3xl);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: #16161666;
+  border: 1px solid #262626;
+}
+.section-title {
+  font-size: var(--text-5xl);
+  line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+.section-subtitle {
+  margin-top: calc(var(--spacing) * 4);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-400);
+}
+.card {
+  border-radius: var(--radius-3xl);
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background: #161616;
+  border: 1px solid #262626;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+body::selection {
+  background: orange;
+  color: white;
+}
+
+.section-label:before {
+  content: "";
+  height: calc(var(--spacing) * 1.5);
+  width: calc(var(--spacing) * 1.5);
+  background: #f97316;
+  border-radius: 3.40282e38px;
+  animation: 2s infinite pulse;
+}
